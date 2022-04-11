@@ -1,0 +1,10 @@
+for example the arrival time , burst time before I/O,I/O waiting time and burst time after I/O are given -
+eg Process 1 -> 3(arrival) , 3(burst time before I/O) , 1(waiting time during I/O) ,2(burst time after I/O)
+a A vector corresponding to each process is created -> 
+for Process 1 -> {-1,-1,-1,1,1,1,2,3,3 } corresponding 3(arrival) , 3(burst time before I/O) , 1(waiting time during I/O) ,2(burst time after I/O)
+-1 means the process is still waiting , 1 means it is executing , 2 means it is waiting for I/O and 3 means it is again executing
+the index associated with each process shows in which stage the process is in example->
+{-1,-1,-1,1,1,1,2,3,3 } ---> {-1,-1,-1,1,1,1,2,3,3 }  
+        ^                              ^
+if the execution of the process is eld at pause , the pointer doesn't move 
+Now within a while loop with a "Clock variable" as iterator and each iteration corrsponds to an interval of 1sec
